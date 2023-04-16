@@ -15,21 +15,20 @@ public class Food {
 
         this.name = name;
         this.weight = weight;
+
     }
 
     public String getName() {
         return name;
     }
 
-    public int getWeight() {
-        return weight;
-    }
-
     public void decreaseWeight() {
+
         System.out.println("Food weight " + weight + " lbs");
         System.out.println("Process of eating commenced");
         weight--;
         System.out.println("Food now weighs " + weight + " lbs");
         System.out.println(" ");
+
     }
 }

@@ -24,23 +24,29 @@ public class Dog {
         this.age = age;
         this.name = name;
         this.weight = weight;
+
     }
 
     public void eat(Food food) {
+
         System.out.println(name + " is eating " + food.getName() + ".");
 
         food.decreaseWeight();
+
     }
 
     public void run() {
+
         System.out.println(name + " is running like Joseph Joestar");
 
     }
 
     public void sleep() {
+
         System.out.println(name + " is sleeping like a kitten, for some reason...");
         bork();
         System.out.println(" ");
+
     }
 
     public String getName() {
@@ -52,10 +58,12 @@ public class Dog {
     }
 
     public void fetch(Ball ball) {
+
         System.out.println(name + " is fetching the ball.");
 
         System.out.println(name + " returns that ball to " + ball.whoDaOwner());
         System.out.println(" ");
+
     }
 
     public static void main(String[] args) {
@@ -73,5 +81,6 @@ public class Dog {
         cat2.fetch(ball1);
         cat3.sleep();
         System.out.println("The dogs' names are " + cat1.getName() + ", " + cat2.getName() + ", and " + cat3.getName() + ".");
+
     }
 }
