@@ -2,21 +2,27 @@
 
 ## Part 1 - Analyze
 * Add Comments to the Code below and label the following:
-  1. Class name
-  2. All **instance variables/fields** and their data-types
-  3. The **Constructor** and the **Constructor Parameters**
-  4. Where a **Student** object gets created.
-  5. Where the **instance variables** value gets set and what its values are.
+  1. Class name 
+     - Student
+  2. All **instance variables/fields** and their data-types 
+     - name (date-type is String) and rollNo (data-type is int)
+  3. The **Constructor** and the **Constructor Parameters** 
+     - Student(String s, int r), Parameters are s (String, name of student) and r (int, the number the student rolled)
+  4. Where a **Student** object gets created. 
+     - Line 29?
+  5. Where the **instance variables** value gets set and what its values are. 
+     - The constructor assigns name = s and rollNo = r
   6. All the instance methods for the class **Student**
+     - I'm gonna guess its .methodForDisplay... 
 
 ```java
-class Student{
-    private String name;
-    private int rollNo;
+class Student{ //Class Name
+    private String name; //name (date-type is String)
+    private int rollNo; //rollNo (data-type is int)
    
-    Student(String s, int r)
-    {
-   	    name = s;
+    Student(String s, int r) //Constructor
+    { //values get set here
+   	    name = s; 
    	    rollNo = r;
     }
    
@@ -26,7 +32,8 @@ class Student{
     }
 
     public static void main(String[] args) {
-        Student obj1=new Student("Rambo",21);
+        Student obj1 = new Student("Rambo",21); //Object gets created here
+        //Here is also where the values are passed as parameters, where r and s get their values
         obj1.methodForDisplay();
     }
 }
@@ -36,7 +43,7 @@ class Student{
 
 * Read the W3Schools page on class methods: [W3Schools Java Class Methods](https://www.w3schools.com/java/java_class_methods.asp)
 * In your own words, write a few sentences below explaining the difference between static and public methods in relation to a class.
-
+  - Static and Public are both modifiers for a class. Static methods can be accessed without creating an object, whereas Public methods can only be accessed by objects.
 ## Part 3 - Dogs
 
 * View the image below, and from the image, construct a Java file **Dog** that mirrors the diagrammed class and the 3 dog objects.
