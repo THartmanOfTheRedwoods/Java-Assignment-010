@@ -10,25 +10,25 @@
   6. All the instance methods for the class **Student**
 
 ```java
-class Student{
-    private String name;
-    private int rollNo;
-   
-    Student(String s, int r)
-    {
-   	    name = s;
-   	    rollNo = r;
-    }
-   
-    void methodForDisplay()
-    {
-        System.out.println(name+"'s Roll No: "+rollNo);
-    }
+class Student{  //Class name Student
+  private String name;  //instance variable
+  private int rollNo;   //instance variable
 
-    public static void main(String[] args) {
-        Student obj1=new Student("Rambo",21);
-        obj1.methodForDisplay();
-    }
+  Student(String s, int r)  //constructor Student which requires the parameters of a string and an int to run
+  {
+    name = s;  //instance variable instantiation
+    rollNo = r; //instance variable instantiation
+  }
+
+  void methodForDisplay()   //Method to display the instance variables
+  {
+    System.out.println(name+"'s Roll No: "+rollNo); //prints to terminal
+  }
+
+  public static void main(String[] args) { //main method
+    Student obj1=new Student("Rambo",21);  //new object of Student is created
+    obj1.methodForDisplay();  //calls on display method to display the newly created objects and new values of the instance variables
+  }
 }
 ```
 
@@ -36,6 +36,9 @@ class Student{
 
 * Read the W3Schools page on class methods: [W3Schools Java Class Methods](https://www.w3schools.com/java/java_class_methods.asp)
 * In your own words, write a few sentences below explaining the difference between static and public methods in relation to a class.
+* Static methods are methods that have a designated spot in the memory of a program. They dont require the creation of a new object to function, and are considered to be easily debuggable.
+* Public methods are methods that require a new object to function. If you want to call a nonstatic method in the static main method, you must create a new object to allocate a new space for the memory of the variables/method so the program 'knows' where to look for the values and commands.
+* My previous answers could be wrong in the reference to the location of memory, but in short, you cannot call a non static method in the main static method. You would first need to create a new object to be able to do so. I found this out in a very long term round about way that was frustrating at first.
 
 ## Part 3 - Dogs
 
