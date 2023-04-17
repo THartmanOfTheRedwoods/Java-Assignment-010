@@ -1,0 +1,31 @@
++----------------------------------+
+|               Dogs               |
++----------------------------------+
+| - breed: String                  |
+| - size: String                   |
+| - color: String                  |
+| - age: int                       |
++----------------------------------+
+| + eat(): void                    |
+| + run(): void                    |
+| + sleep(): void                  |
+| + name(): void                   |
++----------------------------------+
+
+Dog1Object: Dogs
+    breed = "Bulldog"
+    size = "large"
+    color = "light gray"
+    age = 5
+
+Dog2Object: Dogs
+    breed = "Beagle"
+    size = "large"
+    color = "orange"
+    age = 6
+
+Dog3Object: Dogs
+    breed = "German Shepherd"
+    size = "large"
+    color = "white & orange"
+    age = 6
