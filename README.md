@@ -3,11 +3,18 @@
 ## Part 1 - Analyze
 * Add Comments to the Code below and label the following:
   1. Class name
+  1  Student
   2. All **instance variables/fields** and their data-types
+  2  name is a String and rollNo is an int
   3. The **Constructor** and the **Constructor Parameters**
+  3  The constructor is Student(String s, int r);
+  3  The parameters are in the parenthsis, it takes 2. One is String s and the other is int r. s is the instance variable name and r is the instance variable for rollNo
   4. Where a **Student** object gets created.
+  4  In the main method. Student obj1=new Student("Rambo",21);
   5. Where the **instance variables** value gets set and what its values are.
+  5  They will get set inside the constructor. name = s, and s is the parameter Student will take, and rollNo = r, the other parameter.
   6. All the instance methods for the class **Student**
+  6  void methodForDisplay()
 
 ```java
 class Student{
@@ -36,6 +43,7 @@ class Student{
 
 * Read the W3Schools page on class methods: [W3Schools Java Class Methods](https://www.w3schools.com/java/java_class_methods.asp)
 * In your own words, write a few sentences below explaining the difference between static and public methods in relation to a class.
+* A public method is accessible from outside a class whereas a static method belongs to the class. A static method can be called without creating an object of the class
 
 ## Part 3 - Dogs
 
