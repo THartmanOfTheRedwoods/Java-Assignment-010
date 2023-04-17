@@ -3,11 +3,18 @@
 ## Part 1 - Analyze
 * Add Comments to the Code below and label the following:
   1. Class name
+     1. student
   2. All **instance variables/fields** and their data-types
+     1. name : String
+     2. rollNo : int
   3. The **Constructor** and the **Constructor Parameters**
+     1. Student (String s, int r)
   4. Where a **Student** object gets created.
+     1. in the "main" method, a new instance gets created.
   5. Where the **instance variables** value gets set and what its values are.
+     1.
   6. All the instance methods for the class **Student**
+     1.
 
 ```java
 class Student{
@@ -36,6 +43,10 @@ class Student{
 
 * Read the W3Schools page on class methods: [W3Schools Java Class Methods](https://www.w3schools.com/java/java_class_methods.asp)
 * In your own words, write a few sentences below explaining the difference between static and public methods in relation to a class.
+
+**Static** means the method or variable can be accessed from outside an object. If it isn't static, you need an instance of the class to access it.
+
+**Public** means it can be accessed from outside its own class. Private restricts how it can be accessed to only its own class.
 
 ## Part 3 - Dogs
 
