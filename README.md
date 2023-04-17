@@ -10,23 +10,23 @@
   6. All the instance methods for the class **Student**
 
 ```java
-class Student{
-    private String name;
-    private int rollNo;
+class Student{ // Class name
+    private String name; // Instance Variable, String
+    private int rollNo; // Instance Variable, int
    
-    Student(String s, int r)
+    Student(String s, int r) // Constructor, String s, int r
     {
-   	    name = s;
-   	    rollNo = r;
+   	    name = s; // Sets instance variable name to the parameter s
+   	    rollNo = r; // Sets instance variable rollNo to the parameter r
     }
    
-    void methodForDisplay()
+    void methodForDisplay() // Instance method
     {
         System.out.println(name+"'s Roll No: "+rollNo);
     }
 
     public static void main(String[] args) {
-        Student obj1=new Student("Rambo",21);
+        Student obj1=new Student("Rambo",21); // Student object created
         obj1.methodForDisplay();
     }
 }
@@ -36,6 +36,7 @@ class Student{
 
 * Read the W3Schools page on class methods: [W3Schools Java Class Methods](https://www.w3schools.com/java/java_class_methods.asp)
 * In your own words, write a few sentences below explaining the difference between static and public methods in relation to a class.
+  * Static methods can be called from anywhere since they are not designed to use instance variables or other parts of a specific object, this makes them easy to call, but can make them harder to use with objects. Non-static methods are able to innately use a specific object's attributes without having to pass them in as arguments making them more suited to be used in some cases. Also, why is it public vs static? Can't methods be both public and static? Isn't it static vs non-static?
 
 ## Part 3 - Dogs
 
